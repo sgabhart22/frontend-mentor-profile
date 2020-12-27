@@ -9,7 +9,23 @@ body {
     color: hsl(0, 0%, 59%);
     background-color: hsl(185, 75%, 39%);
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#bg-top {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+}
+
+#bg-bottom {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    z-index: -1 ;
 }
 
 .card {
