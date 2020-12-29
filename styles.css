@@ -7,6 +7,9 @@ body {
     font-family: kumbh-sans;
     font-size: 18px;
     color: hsl(0, 0%, 59%);
+    background: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right calc(50vw + 15%) bottom calc(65vh - 15vw), left calc(41vw + 25%) top calc(72vh - 10vw);
     background-color: hsl(185, 75%, 39%);
     display: flex;
     flex-direction: column;
@@ -15,10 +18,11 @@ body {
     height: 100vh;
 }
 
-#bg-top {
+/* #bg-top {
     position: absolute;
-    top: -50%;
-    left: -50%;
+    top: -50vh;
+    left: -50vh;
+    background-position: -50%;
 }
 
 #bg-bottom {
@@ -26,7 +30,7 @@ body {
     top: 80%;
     left: 50%;
     z-index: -1 ;
-}
+} */
 
 .card {
     z-index: 3;
@@ -35,6 +39,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     background: white;
+    box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.2);
 }
 
 .card .header {
